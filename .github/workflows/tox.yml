@@ -24,4 +24,4 @@ jobs:
           tox -e lint
       - name: Test
         run: |
-          tox
+          tox -e py38

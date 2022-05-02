@@ -15,26 +15,6 @@ class horse:
         self.parents: List[horse] | None = parents
 
 
-class horses:
-    def __init__(self) -> None:
-        self.horses: List[horse] = []
-
-    def add_horse(self, hor: horse) -> bool:
-        for h in self.horses:
-            if hor == h:
-                return False
-
-        self.horses.append(hor)
-        return True
-
-    def get_horse(self, id: int) -> horse | None:
-        for horse in self.horses:
-            if id == horse.id:
-                return horse
-
-        return None
-
-
 class track:
     def __init__(self, *args, id: int, name: str, place_id: int) -> None:
         self.id: int = id

@@ -1,6 +1,7 @@
+from typing import List
+
 from core import interfaces
 from core.types import horse
-from typing import List
 
 
 class MockHorses(interfaces.Ihorse_database):
